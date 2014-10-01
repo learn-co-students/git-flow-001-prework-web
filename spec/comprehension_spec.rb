@@ -44,6 +44,45 @@ describe "PUSHING:" do
   end
 end
 
+describe "FETCHING:" do
+  it "what command do you run to update all branches from all remotes?" do
+    answer = "?"
+    expect(answer).to eq("git fetch --all")
+  end
+
+  it "Locally you have a master branch, remotely there is a master & add-nav-bar branch.
+      You run 'git fetch --all'. 
+      What command would you need to run to view and change 'add-nav-bar' branch locally?"
+    answer = "?"
+    expect(answer).to eq("git checkout add-nav-bar")
+  end
+
+  it "what command do you run to update the master branch from the remote 'upstream'?" do
+    answer = "?"
+    expect(answer).to eq("git fetch upstream master")
+  end
+end
+
+describe "PULLING:" do
+
+  it "is 'git pull' the same as running 'git fetch' followed by 'git merge'?"
+    answer = "?"
+    expect(answer).to eq(true)
+  end
+
+  it "from the add-img branch, what command do you run to pull down all the changes from
+      the add-img branch on the remote 'origin'?" do
+    answer = "?"
+    expect(answer).to eq("git pull origin add-img")
+  end
+
+  it "from the add-img branch, what command do you run to pull down all the changes from
+      the add-img branch on the remote 'upstream'?" do
+    answer = "?"
+    expect(answer).to eq("git pull upstream add-img")
+  end
+end
+
 describe "BRANCHING:" do
   it "what is the syntax for creating a new branch called 'style-image'?" do
     answer = "?"
@@ -97,7 +136,7 @@ describe "MERGING:" do
     expect(answer).to eq(true)
   end
 
-  it "what is the syntax for merging the feature branch called 
+  it "what is the syntax for merging the local feature branch called 
       'update-color-scheme' into master, assuming you're already on master" do
       answer = "?"
     expect(answer).to eq("git merge update-color-scheme")
@@ -107,4 +146,11 @@ describe "MERGING:" do
       answer = "?"
     expect(answer).to eq(false)
   end
+
+  it "once you've resolved merge conflicts, you must stage and commit the files
+      in which there were conflicts" do
+      answer = "?"
+    expect(answer).to eq(true)
+  end
 end
+
