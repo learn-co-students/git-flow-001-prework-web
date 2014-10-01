@@ -18,7 +18,8 @@ Remember to fork and clone this lab if you haven't already.
 
 ### Branching
 
-* Before altering your code base, open `index.html` in the browser. Notice that tree pic, you're going to make a branch where you add a photo of a turtle below the tree picture.
+Before altering your code base, open `index.html` in the browser. Notice that tree pic, you're going to make a branch where you add a photo of a turtle below the tree picture.
+
 * Type `git branch`. This should return master.
 * Make a new branch called `add-turtle` from the master branch: `git branch add-turtle`
 * Type `git branch` again. Now you should see `master` and `add-turtle`.
@@ -46,7 +47,15 @@ Remember to fork and clone this lab if you haven't already.
 
 ### Merging
 
-* Now that you've sucessfully added a turtle pic and caption
+Now that you've sucessfully added a turtle pic and caption to the add-turtle branch, you're going to merge that branch into master.
+
+* The first step is to switch back to the master branch: `git checkout master`
+* Now you're going to merge the add-turtle branch in: `git merge add-turtle`
+* Open up your `index.html` in the browser. How does it look? Does it have two pictures now? 
+
+While you have this change locally, your remote repo still thinks that `index.html` just has one picture, the tree/bird one. You need to tell about this update.
+* Push the update to your master branch on your remote repo: `git push origin master`
+* Checkout 
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
