@@ -15,13 +15,15 @@ resources: 5
 
 ## LAUREN HERE:
 
-  ____  _    _  _____  _____ 
- |  _ \| |  | |/ ____|/ ____|
- | |_) | |  | | |  __| (___  
- |  _ <| |  | | | |_ |\___ \ 
- | |_) | |__| | |__| |____) |
- |____/ \____/ \_____|_____/  
+```
+____  _    _  _____  _____ 
+|  _ \| |  | |/ ____|/ ____|
+| |_) | |  | | |  __| (___  
+|  _ <| |  | | | |_ |\___ \ 
+| |_) | |__| | |__| |____) |
+|____/ \____/ \_____|_____/  
  
+```
 
 ## Instructions
 
@@ -158,7 +160,7 @@ Many times when working in groups, a developer will branch off of master, in thi
   * ![readme](/img/readme-link.png)
 * Now click on the pencil icon, shown below:
   * ![edit icon](/img/edit.png)
-<<<<<<< HEAD
+
 * Near the top of the markup, below the "Objectives" section, add the text below:
 
 ```
@@ -181,10 +183,6 @@ ____  _    _  _____  _____
 #### You Time
 
 Now you need to get the changes that Lauren made.
-=======
->>>>>>> f7b1099e133ca3f95e07a216aed4769f70050e0b
-
-
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
