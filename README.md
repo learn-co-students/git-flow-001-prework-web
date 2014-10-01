@@ -116,6 +116,7 @@ From the walrus branch, switch to master. From master, make a new branch, add-wa
 </div>
 <!-- end polar bear picture and caption -->
 ```
+
 Remember to add and commit these changes as well.
 
 #### Merging with Conflicts
@@ -136,9 +137,13 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 ### Getting a Remote Branch
 
-Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. Since you're working on this project alone, you're going to mimic the remote creation of a new branch.
+Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. 
 
-* You're going to pretend to be a team member for this section.
+Since you're working on this project alone, you're going to mimic the remote creation of a new branch. You're going to pretend to be a team member, Lauren, for this section. Lauren likes to add emoticons to readmes.
+
+#### Lauren Time
+
+* Pretend to be Lauren.
 * Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
   * ![branch dropdown](/public/img/branch-dropdown.png)
 * Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
@@ -154,25 +159,47 @@ Many times when working in groups, a developer will branch off of master, in thi
 
 ## Lauren Here:
 
-____  _    _  _____  _____ 
-|  _ \| |  | |/ ____|/ ____|
-| |_) | |  | | |  __| (___  
-|  _ <| |  | | | |_ |\___ \ 
-| |_) | |__| | |__| |____) |
-|____/ \____/ \_____|_____/
+(╯°□°）╯︵ ┻━┻
 
 ```
 
 * Now the readme should look like this:
-  * ![bugs added to readme](/public/img/laruen.png)
+  * ![table flip added to readme](/public/img/laruen.png)
 
-* Scroll to the bottom, add a commit message like "added bugs to readme", and click commit changes.
+* Scroll to the bottom, add a commit message like "added table flip to readme", and click commit changes.
   * ![commit changes](/public/img/commit-changes.png)
 * Lauren's work here is done. You can go back to being you.
 
 #### You Time
 
 Now you need to get the changes that Lauren made.
+
+* Update your remote-tracking branches by writing a fetch command: `git fetch origin add-fireflies` or `git fetch --all`
+* Type `git branch`. You probably still only see `master` and `add-walrus-and-polar-bear`. Think abou why this is.
+* Checkout the branch Lauren created: `git checkout add-fireflies`
+* Now type `git branch`. You should see three branches: `master`, `add-walrus-and-polar-bear`, and `add-fireflies` (highlighted)
+* If you open the readme in Sublime from the add-fireflies branch, you should see Lauren's table flip addition.
+* Still in the `add-fireflies` branch, add the HTML code below to `index.html`, below the turtle.
+
+```HTML
+<!-- begin fireflies picture and caption -->
+<div class="center-container">
+  <div class="card">
+    <img src="public/img/polar-bear.jpg" alt="walrus swimming with bubbles">
+  </div>
+  <div class="card">
+    <div class="caption">
+      <h4>Searching for Love</h4>
+      <p>Spencer Black</p>
+      <p>Blue ghost fireflies in Brevard, North Carolina</p>
+    </div>
+  </div>
+</div>
+<!-- end fireflies picture and caption -->
+```
+
+* Add and commit these changes (`git add index.html`, `git commit -m "add firefly img and caption`") before checking out to master (`git checkout master`). 
+* From master, merge `add-butterflies` (`git merge add-fireflies`). Make sure all three pictures are there (tree, turtle, fireflies) before pushing up to your remote repository (`git push origin master`).
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
