@@ -137,7 +137,8 @@ other content here
 ```
 
 * Just decide which part of the markup you'd like to preserve: the first part from add-walrus-and-polar-bear, the second part from add-walrus, or both. Then delete the `<<<<HEAD`, `======`, and `>>>>>` parts. 
-* Fix the merge conflict in `index.html` so that index now has three photos: tree, walrus, and polar bear.
+* Fix the merge conflict in `index.html` so that index now has three photos: tree, walrus, and polar 
+bear.
 * Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
 * Add and commit these changes.
 
@@ -180,7 +181,7 @@ Since you're working on this project alone, you're going to mimic the remote cre
 ```
 
 * Now the readme should look like this:
-  * ![table flip added to readme](/public/img/laruen.png)
+  * ![table flip added to readme](/public/img/lauren.png)
 
 * Scroll to the bottom, add a commit message like "added table flip to readme", and click commit changes.
   * ![commit changes](/public/img/commit-changes.png)
