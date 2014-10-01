@@ -173,5 +173,3 @@ describe "DELETING BRANCHES:" do
   end
 
 end
-
-
