@@ -72,8 +72,8 @@ While you have this change locally, your remote repo still thinks that `index.ht
 * Push the update to your master branch on your remote repo: `git push origin master`
 * To make sure this push worked, visit your fork of this repo. From there, you can double check in at least two ways: 
   1. There will be a light blue bar above the file struture of the repo:
-  ![blue bar](/img/blue-bar.png) that displays the most recent commit. This bar should have your GitHub picture followed by your GitHub name and a time stamp.
-  2. Click on ![num of commits](/img/commits.png). The most recent commit, the one at the top, should be the one you made.
+  ![blue bar](img/blue-bar.png) that displays the most recent commit. This bar should have your GitHub picture followed by your GitHub name and a time stamp.
+  2. Click on ![num of commits](img/commits.png). The most recent commit, the one at the top, should be the one you made.
 
 * Let's get local again: How many branches do you expect to see when you type `git branch`? How many are there? What does this tell you about merging?
 
