@@ -4,7 +4,6 @@ tags: git, merge, pull, fetch, commit, pull, push, wip
 resources: 5
 ---
 
-
 # Git Flow
 
 ## Objectives
@@ -12,18 +11,6 @@ resources: 5
 * Get familiar with git syntax
 * Get comfortable creating, merging, pushing, and pulling branches.
 * Resolve merge conflicts
-
-## LAUREN HERE:
-
-```
-____  _    _  _____  _____ 
-|  _ \| |  | |/ ____|/ ____|
-| |_) | |  | | |  __| (___  
-|  _ <| |  | | | |_ |\___ \ 
-| |_) | |__| | |__| |____) |
-|____/ \____/ \_____|_____/  
- 
-```
 
 ## Instructions
 
@@ -72,8 +59,8 @@ While you have this change locally, your remote repo still thinks that `index.ht
 * Push the update to your master branch on your remote repo: `git push origin master`
 * To make sure this push worked, visit your fork of this repo. From there, you can double check in at least two ways: 
   1. There will be a light blue bar above the file struture of the repo:
-  ![blue bar](img/blue-bar.png) that displays the most recent commit. This bar should have your GitHub picture followed by your GitHub name and a time stamp.
-  2. Click on ![num of commits](img/commits.png). The most recent commit, the one at the top, should be the one you made.
+  ![blue bar](/public/img/blue-bar.png) that displays the most recent commit. This bar should have your GitHub picture followed by your GitHub name and a time stamp.
+  2. Click on ![num of commits](/public/img/commits.png). The most recent commit, the one at the top, should be the one you made.
 
 * Let's get local again: How many branches do you expect to see when you type `git branch`? How many are there? What does this tell you about merging?
 
@@ -143,7 +130,7 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 * From the branch `add-walrus-and-polar-bear`, push the code to a remote branch of the same title. You can do this in one line with: `git push origin add-walrus-and-polar-bear`. 
 
-* To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
+* To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/public/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
 * Now your master branch has a tree and a turtle while add-walrus-and-polar-bear has tree, walrus, and polar bear.
 * Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on master or add-walrus-and-polar-bear instead.
 
@@ -153,18 +140,21 @@ Many times when working in groups, a developer will branch off of master, in thi
 
 * You're going to pretend to be a team member for this section.
 * Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
-  * ![branch dropdown](/img/branch-dropdown.png)
+  * ![branch dropdown](/public/img/branch-dropdown.png)
 * Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
-![firefly branch](/img/firefly-branch.png)
+![firefly branch](/public/img/firefly-branch.png)
 * This will redirect you to a newly created branch on your remote repo called "add-fireflies". From here, click on `README.md`:
-  * ![readme](/img/readme-link.png)
+  * ![readme](/public/img/readme-link.png)
 * Now click on the pencil icon, shown below:
-  * ![edit icon](/img/edit.png)
+  * ![edit icon](/public/img/edit.png)
 
 * Near the top of the markup, below the "Objectives" section, add the text below:
 
-```
+```markdown
+
 ## Lauren Here:
+
+```text
 ____  _    _  _____  _____ 
 |  _ \| |  | |/ ____|/ ____|
 | |_) | |  | | |  __| (___  
@@ -173,11 +163,13 @@ ____  _    _  _____  _____
 |____/ \____/ \_____|_____/                                                                                               
 ```
 
+```
+
 * Now the readme should look like this:
-  * ![bugs added to readme](laruen.png)
+  * ![bugs added to readme](/public/img/laruen.png)
 
 * Scroll to the bottom, add a commit message like "added bugs to readme", and click commit changes.
-  * ![commit changes](/img/commit-changes.png)
+  * ![commit changes](/public/img/commit-changes.png)
 * Lauren's work here is done. You can go back to being you.
 
 #### You Time
