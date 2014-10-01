@@ -52,7 +52,7 @@ describe "FETCHING:" do
 
   it "Locally you have a master branch, remotely there is a master & add-nav-bar branch.
       You run 'git fetch --all'. 
-      What command would you need to run to view and change 'add-nav-bar' branch locally?"
+      What command would you need to run to view and change 'add-nav-bar' branch locally?" do
     answer = "?"
     expect(answer).to eq("git checkout add-nav-bar")
   end
@@ -65,7 +65,7 @@ end
 
 describe "PULLING:" do
 
-  it "is 'git pull' the same as running 'git fetch' followed by 'git merge'?"
+  it "is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     answer = "?"
     expect(answer).to eq(true)
   end
