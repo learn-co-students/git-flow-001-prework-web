@@ -200,8 +200,38 @@ Now you need to get the changes that Lauren made.
 
 * Add and commit these changes (`git add index.html`, `git commit -m "add firefly img and caption`") before checking out to master (`git checkout master`). 
 * From master, merge `add-butterflies` (`git merge add-fireflies`). Make sure all three pictures are there (tree, turtle, fireflies) before pushing up to your remote repository (`git push origin master`).
+* Since you merged into master and pushed the changes to a remote respository, delete the local branch (`git branch -D add-fireflies`).
+* Now it's time to delete the remote branch `add-fireflies` as it is now included in the master branch: `git push origin :add-fireflies`
 
+## Extra Credit
 
+Merge `add-walrus-and-polar-bear` into master. Fix the merge conflicts and push the changes before deleting the local and remote `add-walrus-and-polar-bear` branches.
+
+## Conclusion
+
+Now you have:
+
+* First Section
+  * Created a branch
+  * Staged and committed changes
+  * Merged a feature branch into master
+  * Pushed changes in master to a remote repository
+  * Deleted a local branch
+* Second Section
+  * Created two branches off of master, each with "competing code"
+  * Merged a feature branch into a feature branch
+  * Resolved merge conflicts
+  * Pushed a local branch to a remote repository
+* Third Section
+  * Created a remote branch and commited changes to it
+  * Fetched the remote branch
+  * Added changes to this fetched branch locally
+  * Merged the fetched branch into master
+  * Pushed master to a remote repository
+  * Deleted a local branch
+  * Deleted a remote branch
+* Extra Credit
+  * Practiced resolving merge conflicts, pushing, and deleting branches.
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
