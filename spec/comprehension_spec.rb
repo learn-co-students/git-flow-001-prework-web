@@ -154,3 +154,24 @@ describe "MERGING:" do
   end
 end
 
+describe "DELETING BRANCHES:" do
+  it "from master, what is the syntax for deleting a local branch called 'add-link'?" do
+      answer = "?"
+    expect(answer).to eq("git branch -d add-link")
+  end
+
+  it "what is the syntax for deleting a remote branch called 'add-link' 
+      on the remote 'origin'?" do
+      answer = "?"
+    expect(answer).to eq("git push origin :add-link")
+  end
+
+  it "what is the syntax for deleting a remote branch called 'add-img' 
+      on the remote 'upstream'?" do
+      answer = "?"
+    expect(answer).to eq("git push upstream :add-img")
+  end
+
+end
+
+
