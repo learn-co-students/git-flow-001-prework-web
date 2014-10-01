@@ -154,14 +154,12 @@ Many times when working in groups, a developer will branch off of master, in thi
 
 ## Lauren Here:
 
-```text
 ____  _    _  _____  _____ 
 |  _ \| |  | |/ ____|/ ____|
 | |_) | |  | | |  __| (___  
 |  _ <| |  | | | |_ |\___ \ 
 | |_) | |__| | |__| |____) |
-|____/ \____/ \_____|_____/                                                                                               
-```
+|____/ \____/ \_____|_____/
 
 ```
 
