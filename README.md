@@ -9,16 +9,20 @@ resources: 5
 ## Objectives
 
 * Get familiar with git syntax
-* Get comfortable creating, merging, pushing, and pulling branches.
+* Get comfortable creating, merging, pushing, and pulling branches
 * Resolve merge conflicts
 
 ## Instructions
 
 Remember to fork and clone this lab if you haven't already.
 
+### Background
+
+For this lab, you're going to be pretending that you work for National Geographic's Photography contest and that you're assignment is to make a quick mockup of what the home page will look like. You want to include photos from the past five winners on the page.
+
 ### Branching
 
-Before altering your code base, open `index.html` in the browser. In the first part of this lab, you're going to add a photo of a turtle below the image of the tree.
+Before altering your code base, open `index.html` in the browser. In the first part of this lab, you're going to add a photo of a turtle below the image of the tree to a branch then merge that branch into master.
 
 * Type `git branch`. This should return master.
 * Make a new branch called `add-turtle` from the master branch: `git branch add-turtle`
@@ -122,7 +126,19 @@ Remember to add and commit these changes as well.
 #### Merging with Conflicts
 
 * From the add-walrus-and-polar-bear branch, merge the add-walrus branch: `git merge add-walrus`
+* You'll probably see a message that looks like "Automatic merge failed; fix conflicts and then commit the result." This just means that you will have to open the files where there are merge conflicts, in this case `index.html`, and find the part that looks like:
+
+```text
+<<<<<<< HEAD
+content here
+=======
+other content here
+>>>>>>> add-walrus
+```
+
+* Just decide which part of the markup you'd like to preserve: the first part from add-walrus-and-polar-bear, the second part from add-walrus, or both. Then delete the `<<<<HEAD`, `======`, and `>>>>>` parts. 
 * Fix the merge conflict in `index.html` so that index now has three photos: tree, walrus, and polar bear.
+* Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
 * Add and commit these changes.
 
 #### Pushing a Local Branch
