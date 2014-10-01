@@ -4,6 +4,7 @@ tags: git, merge, pull, fetch, commit, pull, push, wip
 resources: 5
 ---
 
+
 # Git Flow
 
 ## Objectives
@@ -11,6 +12,16 @@ resources: 5
 * Get familiar with git syntax
 * Get comfortable creating, merging, pushing, and pulling branches.
 * Resolve merge conflicts
+
+## LAUREN HERE:
+
+  ____  _    _  _____  _____ 
+ |  _ \| |  | |/ ____|/ ____|
+ | |_) | |  | | |  __| (___  
+ |  _ <| |  | | | |_ |\___ \ 
+ | |_) | |__| | |__| |____) |
+ |____/ \____/ \_____|_____/  
+ 
 
 ## Instructions
 
@@ -136,14 +147,10 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 ### Getting a Remote Branch
 
-Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. 
+Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. Since you're working on this project alone, you're going to mimic the remote creation of a new branch.
 
-#### Lauren Time
-
-Since you're working on this project alone, you're going to mimic the remote creation of a new branch. You're going to pretend to be a team member for this section. This team member you will pretend to be is named Lauren and Lauren loves to add designs and stuff to readmes.
-
-* The first step is to pretend to be Lauren.
-* As Lauren, create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
+* You're going to pretend to be a team member for this section.
+* Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
   * ![branch dropdown](/img/branch-dropdown.png)
 * Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
 ![firefly branch](/img/firefly-branch.png)
@@ -151,16 +158,17 @@ Since you're working on this project alone, you're going to mimic the remote cre
   * ![readme](/img/readme-link.png)
 * Now click on the pencil icon, shown below:
   * ![edit icon](/img/edit.png)
+<<<<<<< HEAD
 * Near the top of the markup, below the "Objectives" section, add the text below:
 
-```txt
+```
 ## Lauren Here:
-  ____  _    _  _____  _____ 
- |  _ \| |  | |/ ____|/ ____|
- | |_) | |  | | |  __| (___  
- |  _ <| |  | | | |_ |\___ \ 
- | |_) | |__| | |__| |____) |
- |____/ \____/ \_____|_____/                                                                                               
+____  _    _  _____  _____ 
+|  _ \| |  | |/ ____|/ ____|
+| |_) | |  | | |  __| (___  
+|  _ <| |  | | | |_ |\___ \ 
+| |_) | |__| | |__| |____) |
+|____/ \____/ \_____|_____/                                                                                               
 ```
 
 * Now the readme should look like this:
@@ -173,8 +181,9 @@ Since you're working on this project alone, you're going to mimic the remote cre
 #### You Time
 
 Now you need to get the changes that Lauren made.
+=======
+>>>>>>> f7b1099e133ca3f95e07a216aed4769f70050e0b
 
-* The first step is to 
 
 
 ## Resources
