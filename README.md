@@ -153,8 +153,7 @@ Since you're working on this project alone, you're going to mimic the remote cre
   * ![edit icon](/img/edit.png)
 * Near the top of the markup, below the "Objectives" section, add the text below:
 
-```text
-
+```txt
 ## Lauren Here:
   ____  _    _  _____  _____ 
  |  _ \| |  | |/ ____|/ ____|
@@ -163,6 +162,7 @@ Since you're working on this project alone, you're going to mimic the remote cre
  | |_) | |__| | |__| |____) |
  |____/ \____/ \_____|_____/                                                                                               
 ```
+
 * Now the readme should look like this:
   * ![bugs added to readme](laruen.png)
 
