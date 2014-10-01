@@ -137,17 +137,17 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 ### Getting a Remote Branch
 
-Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. 
+Many times when working in groups, a developer will branch off of master, add some code, then push this new branch to the remote repo for another developer to work on. 
 
-Since you're working on this project alone, you're going to mimic the remote creation of a new branch. You're going to pretend to be a team member, Lauren, for this section. Lauren likes to add emoticons to readmes.
+Since you're working on this project alone, you're going to mimic the remote creation of a new branch. For the next section, you're going to pretend to be a team member, Lauren. Lauren likes to add emoticons to readmes.
 
 #### Lauren Time
 
-* Pretend to be Lauren.
-* Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
+* The first step is to pretend to be Lauren.
+* As Lauren, go to GitHub. From GitHub, go to your fork of this lab. From this interface, create a new branch called "add-fireflies" using the pictured interface below:
   * ![branch dropdown](/public/img/branch-dropdown.png)
 * Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
-![firefly branch](/public/img/firefly-branch.png)
+  * ![firefly branch](/public/img/firefly-branch.png)
 * This will redirect you to a newly created branch on your remote repo called "add-fireflies". From here, click on `README.md`:
   * ![readme](/public/img/readme-link.png)
 * Now click on the pencil icon, shown below:
@@ -175,7 +175,7 @@ Since you're working on this project alone, you're going to mimic the remote cre
 Now you need to get the changes that Lauren made.
 
 * Update your remote-tracking branches by writing a fetch command: `git fetch origin add-fireflies` or `git fetch --all`
-* Type `git branch`. You probably still only see `master` and `add-walrus-and-polar-bear`. Think abou why this is.
+* Type `git branch`. You probably still only see `master` and `add-walrus-and-polar-bear`. Think about why this is.
 * Checkout the branch Lauren created: `git checkout add-fireflies`
 * Now type `git branch`. You should see three branches: `master`, `add-walrus-and-polar-bear`, and `add-fireflies` (highlighted)
 * If you open the readme in Sublime from the add-fireflies branch, you should see Lauren's table flip addition.
@@ -200,6 +200,8 @@ Now you need to get the changes that Lauren made.
 
 * Add and commit these changes (`git add index.html`, `git commit -m "add firefly img and caption`") before checking out to master (`git checkout master`). 
 * From master, merge `add-butterflies` (`git merge add-fireflies`). Make sure all three pictures are there (tree, turtle, fireflies) before pushing up to your remote repository (`git push origin master`).
+
+
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
