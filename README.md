@@ -136,10 +136,14 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 ### Getting a Remote Branch
 
-Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. Since you're working on this project alone, you're going to mimic the remote creation of a new branch.
+Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. 
 
-* You're going to pretend to be a team member for this section.
-* Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
+#### Lauren Time
+
+Since you're working on this project alone, you're going to mimic the remote creation of a new branch. You're going to pretend to be a team member for this section. This team member you will pretend to be is named Lauren and Lauren loves to add designs and stuff to readmes.
+
+* The first step is to pretend to be Lauren.
+* As Lauren, create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
   * ![branch dropdown](/img/branch-dropdown.png)
 * Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
 ![firefly branch](/img/firefly-branch.png)
@@ -147,7 +151,30 @@ Many times when working in groups, a developer will branch off of master, in thi
   * ![readme](/img/readme-link.png)
 * Now click on the pencil icon, shown below:
   * ![edit icon](/img/edit.png)
+* Near the top of the markup, below the "Objectives" section, add the text below:
 
+```text
+
+## Lauren Here:
+  ____  _    _  _____  _____ 
+ |  _ \| |  | |/ ____|/ ____|
+ | |_) | |  | | |  __| (___  
+ |  _ <| |  | | | |_ |\___ \ 
+ | |_) | |__| | |__| |____) |
+ |____/ \____/ \_____|_____/                                                                                               
+```
+* Now the readme should look like this:
+  * ![bugs added to readme](laruen.png)
+
+* Scroll to the bottom, add a commit message like "added bugs to readme", and click commit changes.
+  * ![commit changes](/img/commit-changes.png)
+* Lauren's work here is done. You can go back to being you.
+
+#### You Time
+
+Now you need to get the changes that Lauren made.
+
+* The first step is to 
 
 
 ## Resources
