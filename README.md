@@ -43,6 +43,7 @@ Before altering your code base, open `index.html` in the browser. In the first p
 </div>
 <!-- end turtle picture and caption -->
 ```
+
 * Open up your `index.html` and see how the page looks.
 * Stage and commit your changes.
 
@@ -70,6 +71,83 @@ Now that you've added the changes you've made from add-turtle to master, and mas
 * Make sure you're on master: `git branch` should return `master` highlighted.
 * Type `git branch -d add-turtle`
 * To make sure this branch was sucessfully deleted, type `git branch`. You should only see `master` now.
+
+### Creating a Merge Conflict
+
+#### Walrus Branch
+
+From master, make a new branch, add-walrus. On this branch, you're going to add the below code to `index.html`, under the tree picture.
+
+```HTML
+<!-- begin walrus picture and caption -->
+<div class="center-container">
+  <div class="card">
+    <div class="caption">
+      <h4>Hello</h4>
+      <p>Misty Gage</p>
+      <p>Point Defiance Zoo, Tacoma, WA</p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="public/img/walrus.jpg" alt="walrus swimming with bubbles">
+  </div>
+</div>
+<!-- end walrus picture and caption -->
+```
+Remember to add and commit these changes.
+
+#### Polar Bear Branch
+
+From the walrus branch, switch to master. From master, make a new branch, add-walrus-and-polar-bear. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
+
+```HTML
+<!-- begin polar bear picture and caption -->
+<div class="center-container">
+  <div class="card">
+    <img src="public/img/polar-bear.jpg" alt="walrus swimming with bubbles">
+  </div>
+  <div class="card">
+    <div class="caption">
+      <h4>Arctic Hi Five</h4>
+      <p>Colin Mackenzie</p>
+      <p>Svalbard, northern Norway</p>
+    </div>
+  </div>
+</div>
+<!-- end polar bear picture and caption -->
+```
+Remember to add and commit these changes as well.
+
+#### Merging with Conflicts
+
+* From the add-walrus-and-polar-bear branch, merge the add-walrus branch: `git merge add-walrus`
+* Fix the merge conflict in `index.html` so that index now has three photos: tree, walrus, and polar bear.
+* Add and commit these changes.
+
+#### Pushing a Local Branch
+
+Now you're going to create a `add-walrus-and-polar-bear` branch on your remote repo.
+
+* From the branch `add-walrus-and-polar-bear`, push the code to a remote branch of the same title. You can do this in one line with: `git push origin add-walrus-and-polar-bear`. 
+
+* To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
+* Now your master branch has a tree and a turtle while add-walrus-and-polar-bear has tree, walrus, and polar bear.
+* Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on master or add-walrus-and-polar-bear instead.
+
+### Getting a Remote Branch
+
+Many times when working in groups, a developer will branch off of master, in this example let's call this branch "change-color-scheme", add some code, then push this new branch to the remote repo for another developer to work on. Since you're working on this project alone, you're going to mimic the remote creation of a new branch.
+
+* You're going to pretend to be a team member for this section.
+* Create a new branch called "add-fireflies" in your git-flow repository on Github using the pictured interface:
+  * ![branch dropdown](/img/branch-dropdown.png)
+* Type "add-fireflies" then click on "Create branch: add-fireflies from 'master'", as pictured below:
+![firefly branch](/img/firefly-branch.png)
+* This will redirect you to a newly created branch on your remote repo called "add-fireflies". From here, click on `README.md`:
+  * ![readme](/img/readme-link.png)
+* Now click on the pencil icon, shown below:
+  * ![edit icon](/img/edit.png)
+
 
 
 ## Resources
