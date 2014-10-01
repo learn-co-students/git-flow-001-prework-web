@@ -18,7 +18,7 @@ Remember to fork and clone this lab if you haven't already.
 
 ### Branching
 
-Before altering your code base, open `index.html` in the browser. Notice that tree pic, you're going to make a branch where you add a photo of a turtle below the tree picture.
+Before altering your code base, open `index.html` in the browser. In the first part of this lab, you're going to add a photo of a turtle below the image of the tree.
 
 * Type `git branch`. This should return master.
 * Make a new branch called `add-turtle` from the master branch: `git branch add-turtle`
