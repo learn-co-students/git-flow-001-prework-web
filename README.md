@@ -248,7 +248,7 @@ Now you have:
   * Deleted a local branch
   * Deleted a remote branch
 * Extra Credit
-  * Practiced resolving merge conflicts, pushing, and deleting branches.
+  * Practiced resolving merge conflicts, pushing, and deleting branches
 
 ## Resources
 * [SourceTree Blog](http://blog.sourcetreeapp.com/) - [Merge or Rebase?](http://blog.sourcetreeapp.com/2012/08/21/merge-or-rebase/)
