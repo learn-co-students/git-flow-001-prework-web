@@ -105,7 +105,7 @@ From master, make a new branch, add-walrus. On this branch, you're going to add 
 ```
 Remember to add and commit these changes.
 
-#### Polar Bear Branch
+#### Polar Bear and Walrus Branch
 
 From the walrus branch, switch to master. From master, make a new branch, add-walrus-and-polar-bear. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
 
@@ -155,7 +155,7 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 * To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/public/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
 * Now your master branch has a tree and a turtle while add-walrus-and-polar-bear has tree, walrus, and polar bear.
-* Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on master or add-walrus-and-polar-bear instead.
+* Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on add-walrus-and-polar-bear instead.
 
 ### Getting a Remote Branch
 
@@ -207,7 +207,7 @@ Now you need to get the changes that Lauren made.
 <!-- begin fireflies picture and caption -->
 <div class="center-container">
   <div class="card">
-    <img src="public/img/polar-bear.jpg" alt="walrus swimming with bubbles">
+    <img src="public/img/fireflies.jpg" alt="fireflies in a forest">
   </div>
   <div class="card">
     <div class="caption">
@@ -227,7 +227,7 @@ Now you need to get the changes that Lauren made.
 
 ### Quiz Time
 
-From the master branch, replace the question marks in `spec/spec_helper.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
+From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
 
 ## Extra Credit
 
