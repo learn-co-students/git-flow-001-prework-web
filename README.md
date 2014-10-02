@@ -18,16 +18,16 @@ Remember to fork and clone this lab if you haven't already.
 
 ### Background
 
-For this lab, you're going to be pretending that you work for National Geographic's Photography contest and that you're assignment is to make a quick mockup of what the home page will look like. You want to include photos from the past five winners on the page.
+For this lab, you're going to be pretending that you work for National Geographic's Photography contest and that your assignment is to make a quick mockup of what the home page will look like. You want to include photos from the past five winners on the page.
 
 ### Branching
 
 Before altering your code base, open `index.html` in the browser. In the first part of this lab, you're going to add a photo of a turtle below the image of the tree to a branch then merge that branch into master.
 
-* Type `git branch`. This should return master.
+* Type `git branch`. This should show you that you're on the master branch.
 * Make a new branch called `add-turtle` from the master branch: `git branch add-turtle`
 * Type `git branch` again. Now you should see `master` (highlighted) and `add-turtle` 
-* Switch to the turtle branch: `git checkout add-turtle`
+* Switch to the add-turtle branch: `git checkout add-turtle`
 * Make sure you switched successfully by typing `git branch` again. This should return `master` and `add-turtle` (highlighted).
 * In `index.html`, below the tree picture and caption section, add the turtle picture using the HTML below:
 
@@ -53,13 +53,13 @@ Before altering your code base, open `index.html` in the browser. In the first p
 
 ### Merging
 
-Now that you've sucessfully added a turtle pic and caption to the add-turtle branch, you're going to merge that branch into master.
+Now that you've sucessfully added a turtle pic and caption to the add-turtle branch and staged and commited it, you're going to merge that branch into master.
 
 * The first step is to switch back to the master branch: `git checkout master`
 * Now you're going to merge the add-turtle branch in: `git merge add-turtle`
 * Open up your `index.html` in the browser. How does it look? Does it have two pictures now? 
 
-While you have this change locally, your remote repo still thinks that `index.html` just has one picture, the tree/bird one. You need to tell about this update.
+While you have this change locally, your remote repo (the one up on Github) still thinks that `index.html` just has one picture, the tree/bird one. You need to tell it about this update.
 * Push the update to your master branch on your remote repo: `git push origin master`
 * To make sure this push worked, visit your fork of this repo. From there, you can double check in at least two ways: 
   1. There will be a light blue bar above the file struture of the repo:
@@ -80,7 +80,7 @@ Now that you've added the changes you've made from add-turtle to master, and mas
 
 #### Walrus Branch
 
-From master, make a new branch, add-walrus. On this branch, you're going to add the below code to `index.html`, under the tree picture.
+From master, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree picture.
 
 ```HTML
 <!-- begin walrus picture and caption -->
@@ -102,7 +102,7 @@ Remember to add and commit these changes.
 
 #### Polar Bear and Walrus Branch
 
-From the walrus branch, switch to master. From master, make a new branch, add-walrus-and-polar-bear. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
+From the walrus branch, switch to master. From master, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
 
 ```HTML
 <!-- begin polar bear picture and caption -->
