@@ -84,7 +84,7 @@ describe "GIT" do
 
   it "12. What command do you run to update the master branch from the remote 'upstream'?" do
     answer = "?"
-    encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
+    encoded_answer = "ccac7c2011443a2392c153b0bb9d14a3b7b03d46"
     expect(encode(answer)).to eq(encoded_answer)
   end
 # end
