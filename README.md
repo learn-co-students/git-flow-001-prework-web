@@ -202,7 +202,7 @@ Now you need to get the changes that Lauren made.
 <!-- begin fireflies picture and caption -->
 <div class="center-container">
   <div class="card">
-    <img src="public/img/polar-bear.jpg" alt="walrus swimming with bubbles">
+    <img src="public/img/fireflies.jpg" alt="fireflies in a forest">
   </div>
   <div class="card">
     <div class="caption">
