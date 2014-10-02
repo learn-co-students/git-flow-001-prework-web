@@ -220,9 +220,9 @@ Now you need to get the changes that Lauren made.
 * Since you merged into master and pushed the changes to a remote respository, delete the local branch (`git branch -D add-fireflies`).
 * Now it's time to delete the remote branch `add-fireflies` as it is now included in the master branch: `git push origin :add-fireflies`
 
-### Final Section
+### Quiz Time
 
-Replace the question marks in `spec/spec_helper.rb`
+From the master branch, replace the question marks in `spec/spec_helper.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
 
 ## Extra Credit
 
