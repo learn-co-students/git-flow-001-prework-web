@@ -39,7 +39,7 @@ describe "GIT" do
   it "6. From the master branch, what is the syntax for pushing the master branch 
       to the remote master branch where the remote is called 'origin'?" do
     answer = "?"
-    encoded_answer = "7db70511a16c0e7af9ae324837b4263d29ebea37"
+    encoded_answer = "6c8e01a0360da3cf6e314c69c453957b70ab1b4e"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
