@@ -69,7 +69,7 @@ describe "GIT" do
 
 # describe "FETCHING:" do
   it "10. What command do you run to update all branches from all remotes?" do
-    answer = "?"
+    answer = "git fetch --all"
     encoded_answer = "01e5711a6878a7ed0e4c0078870b772d0a58f510"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -77,14 +77,14 @@ describe "GIT" do
   it "11. Locally you have a master branch, remotely there is a master & add-nav-bar branch.
       You run 'git fetch --all'. 
       What command would you need to run to view and change 'add-nav-bar' branch locally?" do
-    answer = "?"
+    answer = "git checkout add-nav-bar"
     encoded_answer = "a510904cdd46be19a468be297076084d2ec5a5cf"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "12. What command do you run to update the master branch from the remote 'upstream'?" do
-    answer = "?"
-    encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
+    answer = "git fetch upstream/master"
+    encoded_answer = "ccac7c2011443a2392c153b0bb9d14a3b7b03d46"
     expect(encode(answer)).to eq(encoded_answer)
   end
 # end
@@ -93,7 +93,7 @@ describe "GIT" do
 
   it "13. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "?" 
+    answer = "true" 
     
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -101,7 +101,7 @@ describe "GIT" do
 
   it "14. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "?"
+    answer = "git pull origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
