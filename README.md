@@ -100,7 +100,7 @@ From master, make a new branch, add-walrus. On this branch, you're going to add 
 ```
 Remember to add and commit these changes.
 
-#### Polar Bear Branch
+#### Polar Bear and Walrus Branch
 
 From the walrus branch, switch to master. From master, make a new branch, add-walrus-and-polar-bear. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
 
