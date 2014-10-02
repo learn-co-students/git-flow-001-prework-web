@@ -31,7 +31,7 @@ Before altering your code base, open `index.html` in the browser. In the first p
 * Make sure you switched successfully by typing `git branch` again. This should return `master` and `add-turtle` (highlighted).
 * In `index.html`, below the tree picture and caption section, add the turtle picture using the HTML below:
 
-```HTML
+```html
 <!-- begin turtle picture and caption -->
 <div class="center-container">
   <div class="card">
@@ -82,7 +82,7 @@ Now that you've added the changes you've made from add-turtle to master, and mas
 
 From master, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures.
 
-```HTML
+```html
 <!-- begin walrus picture and caption -->
 <div class="center-container">
   <div class="card">
@@ -104,7 +104,7 @@ Remember to add and commit these changes.
 
 From the walrus branch, switch to master. From master, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures (the same location where you added the walrus photo).
 
-```HTML
+```html
 <!-- begin polar bear picture and caption -->
 <div class="center-container">
   <div class="card">
@@ -128,7 +128,7 @@ Remember to add and commit these changes as well.
 * From the add-walrus-and-polar-bear branch, merge the add-walrus branch: `git merge add-walrus`
 * You'll probably see a message that looks like "Automatic merge failed; fix conflicts and then commit the result." This just means that you will have to open the files where there are merge conflicts, in this case `index.html`, and find the part that looks like:
 
-```text
+```
 <<<<<<< HEAD
 HTML for polar bear
 =======
@@ -197,7 +197,7 @@ Now you need to get the changes that Lauren made.
 * If you open the readme in Sublime from the add-fireflies branch, you should see Lauren's table flip addition.
 * Still in the `add-fireflies` branch, add the HTML code below to `index.html`, below the turtle.
 
-```HTML
+```html
 <!-- begin fireflies picture and caption -->
 <div class="center-container">
   <div class="card">
