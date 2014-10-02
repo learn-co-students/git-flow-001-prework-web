@@ -237,7 +237,7 @@ Just to review, this is the chronological order of this lab complete with a diag
 11. add firefly pic and caption to add-firefly branch
 12. merge add-firefly into master
 
-Without looking at the diagram above, try and draw your own visualization. Take a picture of your work and add that image to the `public/img/` folder. Title your drawing "visualization".
+Without looking at the diagram above, try and draw your own visualization. Take a picture of your work and add that image to the `public/img/` folder. Title your drawing "drawing.png".
 
 ### Quiz Time
 
