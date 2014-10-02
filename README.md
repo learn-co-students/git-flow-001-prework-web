@@ -85,7 +85,7 @@ Now that you've added the changes you've made from add-turtle to master, and mas
 
 #### Walrus Branch
 
-From master, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree picture.
+From master, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures.
 
 ```HTML
 <!-- begin walrus picture and caption -->
@@ -107,7 +107,7 @@ Remember to add and commit these changes.
 
 #### Polar Bear and Walrus Branch
 
-From the walrus branch, switch to master. From master, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree picture (the same location where you added the walrus photo).
+From the walrus branch, switch to master. From master, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures (the same location where you added the walrus photo).
 
 ```HTML
 <!-- begin polar bear picture and caption -->
@@ -135,15 +135,15 @@ Remember to add and commit these changes as well.
 
 ```text
 <<<<<<< HEAD
-content here
+HTML for polar bear
 =======
-other content here
+HTML for walrus
 >>>>>>> add-walrus
 ```
 
-* Just decide which part of the markup you'd like to preserve: the first part from add-walrus-and-polar-bear, the second part from add-walrus, or both. Then delete the `<<<<HEAD`, `======`, and `>>>>>` parts. 
-* Fix the merge conflict in `index.html` so that index now has three photos: tree, walrus, and polar 
-bear.
+* Just decide which part of the markup you'd like to preserve: the first part from add-walrus-and-polar-bear, the second part from add-walrus, or both. Then delete the `<<<<HEAD`, `======`, and `>>>>>` parts.
+
+* Fix the merge conflict in `index.html` so that index now has four photos: tree, turtle, walrus, and polar bear.
 * Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
 * Add and commit these changes.
 
@@ -151,8 +151,7 @@ bear.
 
 Now you're going to create a `add-walrus-and-polar-bear` branch on your remote repo.
 
-* From the branch `add-walrus-and-polar-bear`, push the code to a remote branch of the same title. You can do this in one line with: `git push origin add-walrus-and-polar-bear`. 
-
+* From the branch `add-walrus-and-polar-bear`, push the code to a remote branch of the same title. You can do this in one line with: `git push origin add-walrus-and-polar-bear`.
 * To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/public/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
 * Now your master branch has a tree and a turtle while add-walrus-and-polar-bear has tree, walrus, and polar bear.
 * Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on add-walrus-and-polar-bear instead.
