@@ -1,35 +1,35 @@
 describe "GIT" do
 # describe "STAGING AND COMMITTING CHANGES:" do
   it "1. What is the syntax for staging a change in index.html if it is in the root dir?" do
-    answer = "?"
+    answer = "git add index.html"
     encoded_answer = "bf338924ddc9ff4eb0c685a794960e0c4ffade2c"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "2. What is the syntax for staging changes in every file, tracked and untracked, 
       assuming no previously staged files were deleted or renamed?" do
-    answer = "?"
+    answer = "git add ."
     encoded_answer = "1a1c76a81d0981b7fe181d7869d1ede4d1a2a24f"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "3. What is the syntax for staging changes in every file, tracked and untracked,
       if a previously staged and committed file has been deleted?" do
-    answer = "?"
+    answer = "git add --all"
     encoded_answer = "e3ed0db138a439522bc6f0a56c71b2c90e3443db"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "4. What is the syntax for committing all staged changes with the message 
       'update link styles'?" do
-    answer = "?"
+    answer = "git commit -m 'update link styles'"
     encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "5. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = "?"
+    answer = "git commit -am 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -38,22 +38,22 @@ describe "GIT" do
 # describe "PUSHING:" do
   it "6. From the master branch, what is the syntax for pushing the master branch 
       to the remote master branch where the remote is called 'origin'?" do
-    answer = "?"
-    encoded_answer = "7db70511a16c0e7af9ae324837b4263d29ebea37"
+    answer = "git push origin master"
+    encoded_answer = "6c8e01a0360da3cf6e314c69c453957b70ab1b4e"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "7. From the feature branch 'add-links', what is the syntax for creating a 
       remote add-links branch with all of the local branch's content? 
       (remote is still called 'origin')" do
-    answer = "?"
+    answer = "git push origin add-links"
     encoded_answer = "07476403b56e1437e855a5d7031b3abc0b97de5a"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "8. From the master branch, what is the syntax for pushing the master branch to the 
       # remote master branch where the remote is called 'upstream'?" do
-    answer = "?"
+    answer = "git push upstream master"
     encoded_answer = "46e78005226efc7d1be2b4f9f26bcbdba2bf286d"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -61,7 +61,7 @@ describe "GIT" do
   it "9. From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
-    answer = "?"
+    answer = "git push upstream add-image"
     encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
     expect(encode(answer)).to eq(encoded_answer)
   end
