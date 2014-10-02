@@ -219,6 +219,26 @@ Now you need to get the changes that Lauren made.
 * Since you merged into master and pushed the changes to a remote respository, delete the local branch (`git branch -D add-fireflies`).
 * Now it's time to delete the remote branch `add-fireflies` as it is now included in the master branch: `git push origin :add-fireflies`
 
+### Visualization
+
+Just to review, this is the chronological order of this lab complete with a diagram of the branches:
+
+![branches](/public/img/branches.png)
+
+1. from master, create branch add-turtle
+2. add turtle pic and caption to index.html
+3. merge add-turtle into master, now master has tree and turtle pics
+4. from master, create branch add-walrus
+5. add walrus pic and caption
+6. from master, create branch add-walrus-and-polar-bear
+7. add polar bear pic and caption
+8. merge add-walrus into add-walrus-and-polar-bear and fix merge conflicts - now branch has tree, turtle, polar bear, and walrus
+9. "Lauren" makes branch add-fireflies off of master and adds an emoticon to the readme
+11. add firefly pic and caption to add-firefly branch
+12. merge add-firefly into master
+
+Without looking at the diagram above, try and draw your own visualization. Take a picture of your work and add that image to the `public/img/` folder. Title your drawing "visualization".
+
 ### Quiz Time
 
 From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
