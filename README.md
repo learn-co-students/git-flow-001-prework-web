@@ -222,7 +222,7 @@ Now you need to get the changes that Lauren made.
 
 ### Quiz Time
 
-From the master branch, replace the question marks in `spec/spec_helper.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
+From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `rspec`. Once every test is passing, submit a pull request using your master branch.
 
 ## Extra Credit
 
