@@ -1,32 +1,32 @@
 describe "STAGING AND COMMITTING CHANGES:" do
-  it "1. a) What is the syntax for staging a change in index.html if it is in the root dir?" do
+  it "1. What is the syntax for staging a change in index.html if it is in the root dir?" do
     answer = "?"
     encoded_answer = "bf338924ddc9ff4eb0c685a794960e0c4ffade2c"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "1. b) What is the syntax for staging changes in every file, tracked and untracked, 
+  it "2. What is the syntax for staging changes in every file, tracked and untracked, 
       assuming no previously staged files were deleted or renamed?" do
     answer = "?"
     encoded_answer = "1a1c76a81d0981b7fe181d7869d1ede4d1a2a24f"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "1. c) What is the syntax for staging changes in every file, tracked and untracked,
+  it "3. What is the syntax for staging changes in every file, tracked and untracked,
       if a previously staged and committed file has been deleted?" do
     answer = "?"
     encoded_answer = "e3ed0db138a439522bc6f0a56c71b2c90e3443db"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "1. d) What is the syntax for committing all staged changes with the message 
+  it "4. What is the syntax for committing all staged changes with the message 
       'update link styles'?" do
     answer = "?"
     encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "1. e) What command allows you to add all previously all tracked, modified files
+  it "5. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
     answer = "?"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
@@ -35,14 +35,14 @@ describe "STAGING AND COMMITTING CHANGES:" do
 end
 
 describe "PUSHING:" do
-  it "2. a) From the master branch, what is the syntax for pushing the master branch 
+  it "6. From the master branch, what is the syntax for pushing the master branch 
       to the remote master branch where the remote is called 'origin'?" do
     answer = "?"
     encoded_answer = "7db70511a16c0e7af9ae324837b4263d29ebea37"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "2. b) From the feature branch 'add-links', what is the syntax for creating a 
+  it "7. From the feature branch 'add-links', what is the syntax for creating a 
       remote add-links branch with all of the local branch's content? 
       (remote is still called 'origin')" do
     answer = "?"
@@ -50,14 +50,14 @@ describe "PUSHING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "2. c) From the master branch, what is the syntax for pushing the master branch to the 
+  it "8. From the master branch, what is the syntax for pushing the master branch to the 
       remote master branch where the remote is called 'upstream'?" do
     answer = "?"
     encoded_answer = "46e78005226efc7d1be2b4f9f26bcbdba2bf286d"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "2. d) From the feature branch 'add-image', what is the syntax for creating a remote
+  it "9. From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
     answer = "?"
@@ -67,13 +67,13 @@ describe "PUSHING:" do
 end
 
 describe "FETCHING:" do
-  it "3. a) What command do you run to update all branches from all remotes?" do
+  it "10. What command do you run to update all branches from all remotes?" do
     answer = "?"
     encoded_answer = "01e5711a6878a7ed0e4c0078870b772d0a58f510"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "3. b) Locally you have a master branch, remotely there is a master & add-nav-bar branch.
+  it "11. Locally you have a master branch, remotely there is a master & add-nav-bar branch.
       You run 'git fetch --all'. 
       What command would you need to run to view and change 'add-nav-bar' branch locally?" do
     answer = "?"
@@ -81,7 +81,7 @@ describe "FETCHING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "3. c) What command do you run to update the master branch from the remote 'upstream'?" do
+  it "12. What command do you run to update the master branch from the remote 'upstream'?" do
     answer = "?"
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
@@ -90,7 +90,7 @@ end
 
 describe "PULLING:" do
 
-  it "4. a) Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
+  it "13. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
     answer = "?" 
     
@@ -98,14 +98,14 @@ describe "PULLING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "4. b) From the add-img branch, what command do you run to fetch and merge all the 
+  it "14. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
     answer = "?"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "4. c) From the add-img branch, what command do you run to pull down all the changes 
+  it "15. From the add-img branch, what command do you run to pull down all the changes 
       from the add-img branch on the remote 'upstream'?" do
     answer = "?"
     encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
@@ -114,33 +114,33 @@ describe "PULLING:" do
 end
 
 describe "BRANCHING:" do
-  it "5. a) What is the syntax for creating a new branch called 'style-image'?" do
+  it "16. What is the syntax for creating a new branch called 'style-image'?" do
     answer = "?"
     encoded_answer = "a905f4cf88cdf57f8c406f2d5e7eb0acafe44c05"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. b) What is the syntax for switching to a branch called 'add-social-media-links'?" do
+  it "17. What is the syntax for switching to a branch called 'add-social-media-links'?" do
     answer = "?"
     encoded_answer = "1004b71629950e1efa0fe94f053b772b170d66b3"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. c) What is the syntax for switching to master from a feature branch called 
+  it "18. What is the syntax for switching to master from a feature branch called 
      'add-nav-bar'" do
     answer = "?"
     encoded_answer = "0899840db4703b45cc69576b6ec53615d552370d"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. d) What is the one line syntax for creating and switching to a branch called 
+  it "19. What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
     answer = "?"
     encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. e) 'git branch style-image' followed by 'git checkout style-image' 
+  it "20. 'git branch style-image' followed by 'git checkout style-image' 
       is the same as 'git branch -b style-image'" do
     # "true" or "false", in a string
     answer = "?"
@@ -149,7 +149,7 @@ describe "BRANCHING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. f) It is best practice to add a feature on the master branch" do
+  it "21. It is best practice to add a feature on the master branch" do
     # "true" or "false", in a string
     answer = "?"
 
@@ -157,7 +157,7 @@ describe "BRANCHING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. g) If you're working on a project on master and you create a new branch, 
+  it "22. If you're working on a project on master and you create a new branch, 
       that branch will be empty until you add code" do
     # "true" or "false", in a string
     answer = "?"
@@ -166,7 +166,7 @@ describe "BRANCHING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "5. h) A branch made from the master branch will look exactly like a 
+  it "23. A branch made from the master branch will look exactly like a 
       branch made off a feature branch that has mulitiple commits not on master" do
     # "true" or "false", in a string
     answer = "?"
@@ -177,21 +177,21 @@ describe "BRANCHING:" do
 end
 
 describe "MERGING:" do
-  it '6. a) To merge a feature branch into master, you must first be on master' do
+  it '24. To merge a feature branch into master, you must first be on master' do
     # "true" or "false", in a string
     answer = "?"
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "6. b) What is the syntax for merging the local feature branch called 
+  it "25. What is the syntax for merging the local feature branch called 
       'update-color-scheme' into master, assuming you're already on master" do
     answer = "?"
     encoded_answer = "38db6e269e805c09ea6c4bc4eb1bb83829e7504c"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "6. c) Merge conflicts are bad and always mean that you did something wrong" do
+  it "26. Merge conflicts are bad and always mean that you did something wrong" do
     # "true" or "false", in a string
     answer = "?"
 
@@ -199,7 +199,7 @@ describe "MERGING:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "6. d) Once you've resolved merge conflicts, you must stage and commit the files
+  it "27. Once you've resolved merge conflicts, you must stage and commit the files
       in which there were conflicts" do
     # "true" or "false", in a string
     answer = "?"
@@ -210,24 +210,41 @@ describe "MERGING:" do
 end
 
 describe "DELETING BRANCHES:" do
-  it "7. a) From master, what is the syntax for deleting a local branch called 
+  it "28. From master, what is the syntax for deleting a local branch called 
       'add-link'?" do
     answer = "?"
     encoded_answer = "6f91ced397c25c02c099b56d71e11955ea660fa0"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "7. b) What is the syntax for deleting a branch called 'add-avatar' 
+  it "29. What is the syntax for deleting a branch called 'add-avatar' 
       on the remote 'origin'?" do
     answer = "?"
     encoded_answer = "7f9e982d2fe3ddabf95d835881a7efd6da387542"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "7. c) What is the syntax for deleting a remote branch called 'add-img' 
+  it "30. What is the syntax for deleting a remote branch called 'add-img' 
       on the remote 'butterfly'?" do
     answer = "?"
     encoded_answer = "9e528dd3bf4ed25f25b148bdc947566883ba785b"
+    expect(encode(answer)).to eq(encoded_answer)
+  end
+
+end
+
+describe "STATUS" do
+  it "31. If index.html is being tracked and you modify it, but don't stage this change,
+      what color will it be if you run 'git status'?"
+    answer = "?"
+    encoded_answer = ""
+    expect(encode(answer)).to eq(encoded_answer)
+  end
+
+  it "31. If index.html is being tracked and you modify it and stage the change,
+      what color will it be if you run 'git status'?"
+    answer = "?"
+    encoded_answer = ""
     expect(encode(answer)).to eq(encoded_answer)
   end
 
