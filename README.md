@@ -1,6 +1,6 @@
 ---
 languages: bash, git
-tags: git, merge, pull, fetch, commit, pull, push, wip
+tags: git, git merge, git fetch, git commit, git push, git status
 resources: 5
 ---
 
