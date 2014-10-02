@@ -235,21 +235,21 @@ end
 
 describe "STATUS" do
   it "31. If index.html is being tracked and you modify it, but don't stage this change,
-      what color will it be if you run 'git status'?"
+      what color will it be if you run 'git status'?" do
     answer = "?"
     encoded_answer = "78988010b890ce6f4d2136481f392787ec6d6106"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "31. If index.html is being tracked and you modify and stage the change,
-      what color will it be if you run 'git status'?"
+      what color will it be if you run 'git status'?" do
     answer = "?"
     encoded_answer = "bc74f4f071a5a33f00ab88a6d6385b5e6638b86c"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "32. If index.html is being tracked and you modify, stage, and commit the change,
-      what color will the readout be if you run 'git status'?"
+      what color will the readout be if you run 'git status'?" do 
     answer = "?"
     encoded_answer = "528cef87d0bfb947548ab94679d1e5765f19089a"
     expect(encode(answer)).to eq(encoded_answer)
@@ -257,7 +257,7 @@ describe "STATUS" do
 
   it "33. If you clone down a repo and make one change that you add and commit locally,
      assuming no one has pushed to your remote since you cloned it, will 'git status' say
-     you're ahead or behind origin/master?"
+     you're ahead or behind origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
     answer = "?"
     encoded_answer = "a7481340412e5d73e6c5c8de4ef9285b85502d5a"
@@ -266,7 +266,7 @@ describe "STATUS" do
 
   it "34. If you clone down a repo at noon and don't touch it but three minues later, 
       someone else pushes two commits to it, will 'git status' say you are ahead or 
-      behind when you run it at 12:05pm"
+      behind when you run it at 12:05pm" do
     # "ahead" or "behind" or "ahead and behind"
     answer = "?"
     encoded_answer = "fb6dbd81382d78f0f0633759a9c6033858e445b5"
@@ -275,7 +275,7 @@ describe "STATUS" do
 
   it "35. If you clone down a repo and make one change that you add and commit locally,
      and one developer has pushed to your remote since you cloned it, 
-     will 'git status' say you're ahead or behind (or both) origin/master?"
+     will 'git status' say you're ahead or behind (or both) origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
     answer = "?"
     encoded_answer = "d81d22fb57ad5589d12d6363f4160b33232c3510"
