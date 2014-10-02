@@ -114,115 +114,121 @@ describe "PULLING:" do
 end
 
 describe "BRANCHING:" do
-  it "what is the syntax for creating a new branch called 'style-image'?" do
+  it "5. a) What is the syntax for creating a new branch called 'style-image'?" do
     answer = "?"
-    encoded_answer = ""
-    expect(answer).to eq("git branch style-image")
+    encoded_answer = "a905f4cf88cdf57f8c406f2d5e7eb0acafe44c05"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for switching to a branch called 'add-social-media-links'?" do
+  it "5. b) What is the syntax for switching to a branch called 'add-social-media-links'?" do
     answer = "?"
-    encoded_answer = ""
-    expect(answer).to eq("git checkout add-social-media-links")
+    encoded_answer = "1004b71629950e1efa0fe94f053b772b170d66b3"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for switching to master from a feature branch called 
-     'add-nav-bar' then creating a branch called 'update-favicon'" do
+  it "5. c) What is the syntax for switching to master from a feature branch called 
+     'add-nav-bar'" do
     answer = "?"
-    encoded_answer = ""
-    expect(answer).to eq("git checkout master; git branch update-favicon")
+    encoded_answer = "0899840db4703b45cc69576b6ec53615d552370d"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the one line syntax for creating and switching to a branch called 
+  it "5. d) What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
     answer = "?"
-    encoded_answer = ""
-    expect(answer).to eq("git checkout -b add-nav-bar")
+    encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "git branch style-image followed by git checkout style-image 
-      is the same as git branch -b style-image" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(true)
+  it "5. e) 'git branch style-image' followed by 'git checkout style-image' 
+      is the same as 'git branch -b style-image'" do
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "it is best practice to add a feature on the master branch" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(false)
+  it "5. f) It is best practice to add a feature on the master branch" do
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "if you're working on a project on master and you create a new branch, 
+  it "5. g) If you're working on a project on master and you create a new branch, 
       that branch will be empty until you add code" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(false)
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "a branch made from the master branch will look exactly like a 
-      branch made off a feature branch" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(false)
+  it "5. h) A branch made from the master branch will look exactly like a 
+      branch made off a feature branch that has mulitiple commits not on master" do
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "MERGING:" do
-  it 'to merge a feature branch into master, you must first be on master' do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(true)
+  it '6. a) To merge a feature branch into master, you must first be on master' do
+    # "true" or "false", in a string
+    answer = "?"
+    encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for merging the local feature branch called 
+  it "6. b) What is the syntax for merging the local feature branch called 
       'update-color-scheme' into master, assuming you're already on master" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq("git merge update-color-scheme")
+    answer = "?"
+    encoded_answer = "38db6e269e805c09ea6c4bc4eb1bb83829e7504c"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "merge conflicts are bad and always mean that you did something wrong" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(false)
+  it "6. c) Merge conflicts are bad and always mean that you did something wrong" do
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "once you've resolved merge conflicts, you must stage and commit the files
+  it "6. d) Once you've resolved merge conflicts, you must stage and commit the files
       in which there were conflicts" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq(true)
+    # "true" or "false", in a string
+    answer = "?"
+
+    encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "DELETING BRANCHES:" do
-  it "from master, what is the syntax for deleting a local branch called 'add-link'?" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq("git branch -d add-link")
+  it "7. a) From master, what is the syntax for deleting a local branch called 
+      'add-link'?" do
+    answer = "?"
+    encoded_answer = "6f91ced397c25c02c099b56d71e11955ea660fa0"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for deleting a remote branch called 'add-link' 
+  it "7. b) What is the syntax for deleting a branch called 'add-avatar' 
       on the remote 'origin'?" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq("git push origin :add-link")
+    answer = "?"
+    encoded_answer = "7f9e982d2fe3ddabf95d835881a7efd6da387542"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for deleting a remote branch called 'add-img' 
-      on the remote 'upstream'?" do
-      answer = "?"
-      encoded_answer = ""
-    expect(answer).to eq("git push upstream :add-img")
+  it "7. c) What is the syntax for deleting a remote branch called 'add-img' 
+      on the remote 'butterfly'?" do
+    answer = "?"
+    encoded_answer = "9e528dd3bf4ed25f25b148bdc947566883ba785b"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
 end
