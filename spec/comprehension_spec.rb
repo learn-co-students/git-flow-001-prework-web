@@ -1,4 +1,5 @@
-describe "STAGING AND COMMITTING CHANGES:" do
+describe "GIT" do
+# describe "STAGING AND COMMITTING CHANGES:" do
   it "1. What is the syntax for staging a change in index.html if it is in the root dir?" do
     answer = "?"
     encoded_answer = "bf338924ddc9ff4eb0c685a794960e0c4ffade2c"
@@ -32,9 +33,9 @@ describe "STAGING AND COMMITTING CHANGES:" do
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "PUSHING:" do
+# describe "PUSHING:" do
   it "6. From the master branch, what is the syntax for pushing the master branch 
       to the remote master branch where the remote is called 'origin'?" do
     answer = "?"
@@ -51,7 +52,7 @@ describe "PUSHING:" do
   end
 
   it "8. From the master branch, what is the syntax for pushing the master branch to the 
-      remote master branch where the remote is called 'upstream'?" do
+      # remote master branch where the remote is called 'upstream'?" do
     answer = "?"
     encoded_answer = "46e78005226efc7d1be2b4f9f26bcbdba2bf286d"
     expect(encode(answer)).to eq(encoded_answer)
@@ -64,9 +65,9 @@ describe "PUSHING:" do
     encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "FETCHING:" do
+# describe "FETCHING:" do
   it "10. What command do you run to update all branches from all remotes?" do
     answer = "?"
     encoded_answer = "01e5711a6878a7ed0e4c0078870b772d0a58f510"
@@ -86,9 +87,9 @@ describe "FETCHING:" do
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "PULLING:" do
+# describe "PULLING:" do
 
   it "13. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
@@ -111,9 +112,9 @@ describe "PULLING:" do
     encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "BRANCHING:" do
+# describe "BRANCHING:" do
   it "16. What is the syntax for creating a new branch called 'style-image'?" do
     answer = "?"
     encoded_answer = "a905f4cf88cdf57f8c406f2d5e7eb0acafe44c05"
@@ -174,9 +175,9 @@ describe "BRANCHING:" do
     encoded_answer = "7cb6efb98ba5972a9b5090dc2e517fe14d12cb04"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "MERGING:" do
+# describe "MERGING:" do
   it '24. To merge a feature branch into master, you must first be on master' do
     # "true" or "false", in a string
     answer = "?"
@@ -207,9 +208,9 @@ describe "MERGING:" do
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
   end
-end
+# end
 
-describe "DELETING BRANCHES:" do
+# describe "DELETING BRANCHES:" do
   it "28. From master, what is the syntax for deleting a local branch called 
       'add-link'?" do
     answer = "?"
@@ -231,9 +232,9 @@ describe "DELETING BRANCHES:" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-end
+# end
 
-describe "STATUS" do
+# describe "STATUS" do
   it "31. If index.html is being tracked and you modify it, but don't stage this change,
       what color will it be if you run 'git status'?" do
     answer = "?"
