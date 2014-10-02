@@ -150,7 +150,7 @@ Now you're going to create a `add-walrus-and-polar-bear` branch on your remote r
 
 * To ensure this push worked, head over to GitHub and view your forked repo. Click on the branch dropdown: ![branch dropdown](/public/img/branch-dropdown.png), there should be the option to view the `add-walrus-and-polar-bear` branch.
 * Now your master branch has a tree and a turtle while add-walrus-and-polar-bear has tree, walrus, and polar bear.
-* Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on master or add-walrus-and-polar-bear instead.
+* Since you merged add-walrus into add-walrus-and-polar-bear, go ahead and delete it. Remember that you cannot "be" on the branch that you're trying to delete so make sure you're on add-walrus-and-polar-bear instead.
 
 ### Getting a Remote Branch
 
