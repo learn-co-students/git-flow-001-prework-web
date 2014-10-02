@@ -1,155 +1,205 @@
 describe "STAGING AND COMMITTING CHANGES:" do
-  it "what is the syntax for staging a change in index.html?" do
+  it "1. a) What is the syntax for staging a change in index.html if it is in the root dir?" do
     answer = "?"
-    expect(answer).to eq("git add index.html")
+    encoded_answer = "bf338924ddc9ff4eb0c685a794960e0c4ffade2c"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for staging changes in every file, tracked and untracked?" do
+  it "1. b) What is the syntax for staging changes in every file, tracked and untracked, 
+      assuming no previously staged files were deleted or renamed?" do
     answer = "?"
-    expect(answer).to eq("git add .")
+    encoded_answer = "1a1c76a81d0981b7fe181d7869d1ede4d1a2a24f"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what is the syntax for committing all staged changes with the message 
-  'update link styles'?" do
+  it "1. c) What is the syntax for staging changes in every file, tracked and untracked,
+      if a previously staged and committed file has been deleted?" do
     answer = "?"
-    expect(answer).to eq("git commit -m 'update link styles'")
+    encoded_answer = "e3ed0db138a439522bc6f0a56c71b2c90e3443db"
+    expect(encode(answer)).to eq(encoded_answer)
+  end
+
+  it "1. d) What is the syntax for committing all staged changes with the message 
+      'update link styles'?" do
+    answer = "?"
+    encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
+    expect(encode(answer)).to eq(encoded_answer)
+  end
+
+  it "1. e) What command allows you to add all previously all tracked, modified files
+      and create a message, 'add img to index' for the commit in one command?" do
+    answer = "?"
+    encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "PUSHING:" do
-  it "from the master branch, what is the syntax for pushing the master branch to the 
-      remote master branch where the remote is called 'origin'?" do
+  it "2. a) From the master branch, what is the syntax for pushing the master branch 
+      to the remote master branch where the remote is called 'origin'?" do
     answer = "?"
-    expect(answer).to eq("git push orgin master")
+    encoded_answer = "7db70511a16c0e7af9ae324837b4263d29ebea37"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "from the feature branch 'add-links', what is the syntax for creating a remote
-      add-links branch with all of the local branch's content? 
+  it "2. b) From the feature branch 'add-links', what is the syntax for creating a 
+      remote add-links branch with all of the local branch's content? 
       (remote is still called 'origin')" do
     answer = "?"
-    expect(answer).to eq("git push origin add-links")
+    encoded_answer = "07476403b56e1437e855a5d7031b3abc0b97de5a"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "from the master branch, what is the syntax for pushing the master branch to the 
+  it "2. c) From the master branch, what is the syntax for pushing the master branch to the 
       remote master branch where the remote is called 'upstream'?" do
     answer = "?"
-    expect(answer).to eq("git push upstream master")
+    encoded_answer = "46e78005226efc7d1be2b4f9f26bcbdba2bf286d"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "from the feature branch 'add-image', what is the syntax for creating a remote
+  it "2. d) From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
     answer = "?"
-    expect(answer).to eq("git push upstream add-image")
+    encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "FETCHING:" do
-  it "what command do you run to update all branches from all remotes?" do
+  it "3. a) What command do you run to update all branches from all remotes?" do
     answer = "?"
-    expect(answer).to eq("git fetch --all")
+    encoded_answer = "01e5711a6878a7ed0e4c0078870b772d0a58f510"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "Locally you have a master branch, remotely there is a master & add-nav-bar branch.
+  it "3. b) Locally you have a master branch, remotely there is a master & add-nav-bar branch.
       You run 'git fetch --all'. 
       What command would you need to run to view and change 'add-nav-bar' branch locally?" do
     answer = "?"
-    expect(answer).to eq("git checkout add-nav-bar")
+    encoded_answer = "a510904cdd46be19a468be297076084d2ec5a5cf"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "what command do you run to update the master branch from the remote 'upstream'?" do
+  it "3. c) What command do you run to update the master branch from the remote 'upstream'?" do
     answer = "?"
-    expect(answer).to eq("git fetch upstream master")
+    encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "PULLING:" do
 
-  it "is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
-    answer = "?"
-    expect(answer).to eq(true)
+  it "4. a) Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
+    # "true" or "false" in a string
+    answer = "?" 
+    
+    encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "from the add-img branch, what command do you run to pull down all the changes from
-      the add-img branch on the remote 'origin'?" do
+  it "4. b) From the add-img branch, what command do you run to fetch and merge all the 
+      changes from the add-img branch on the remote 'origin'?" do
     answer = "?"
-    expect(answer).to eq("git pull origin add-img")
+    encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
-  it "from the add-img branch, what command do you run to pull down all the changes from
-      the add-img branch on the remote 'upstream'?" do
+  it "4. c) From the add-img branch, what command do you run to pull down all the changes 
+      from the add-img branch on the remote 'upstream'?" do
     answer = "?"
-    expect(answer).to eq("git pull upstream add-img")
+    encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "BRANCHING:" do
   it "what is the syntax for creating a new branch called 'style-image'?" do
     answer = "?"
+    encoded_answer = ""
     expect(answer).to eq("git branch style-image")
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "what is the syntax for switching to a branch called 'add-social-media-links'?" do
     answer = "?"
+    encoded_answer = ""
     expect(answer).to eq("git checkout add-social-media-links")
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "what is the syntax for switching to master from a feature branch called 
      'add-nav-bar' then creating a branch called 'update-favicon'" do
     answer = "?"
+    encoded_answer = ""
     expect(answer).to eq("git checkout master; git branch update-favicon")
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "what is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
     answer = "?"
+    encoded_answer = ""
     expect(answer).to eq("git checkout -b add-nav-bar")
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "git branch style-image followed by git checkout style-image 
       is the same as git branch -b style-image" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(true)
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "it is best practice to add a feature on the master branch" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(false)
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "if you're working on a project on master and you create a new branch, 
       that branch will be empty until you add code" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(false)
+    expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "a branch made from the master branch will look exactly like a 
       branch made off a feature branch" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(false)
+    expect(encode(answer)).to eq(encoded_answer)
   end
 end
 
 describe "MERGING:" do
   it 'to merge a feature branch into master, you must first be on master' do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(true)
   end
 
   it "what is the syntax for merging the local feature branch called 
       'update-color-scheme' into master, assuming you're already on master" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq("git merge update-color-scheme")
   end
 
   it "merge conflicts are bad and always mean that you did something wrong" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(false)
   end
 
   it "once you've resolved merge conflicts, you must stage and commit the files
       in which there were conflicts" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq(true)
   end
 end
@@ -157,18 +207,21 @@ end
 describe "DELETING BRANCHES:" do
   it "from master, what is the syntax for deleting a local branch called 'add-link'?" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq("git branch -d add-link")
   end
 
   it "what is the syntax for deleting a remote branch called 'add-link' 
       on the remote 'origin'?" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq("git push origin :add-link")
   end
 
   it "what is the syntax for deleting a remote branch called 'add-img' 
       on the remote 'upstream'?" do
       answer = "?"
+      encoded_answer = ""
     expect(answer).to eq("git push upstream :add-img")
   end
 

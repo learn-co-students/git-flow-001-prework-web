@@ -2,7 +2,7 @@
 # specs live under a `spec` directory, which RSpec adds to the `$LOAD_PATH`.
 # Require this file using `require "spec_helper"` to ensure that it is only
 # loaded once.
-require 'base64'
+require 'digest/sha1'
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # Run specs in random order to surface order dependencies. If you find an
@@ -10,4 +10,8 @@ RSpec.configure do |config|
   # the seed, which is printed after each run.
   #     --seed 1234
   config.order = 'default'
+end
+
+def encode(string)
+  Digest::SHA1.hexdigest(string)
 end

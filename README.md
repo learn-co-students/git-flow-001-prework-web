@@ -220,6 +220,10 @@ Now you need to get the changes that Lauren made.
 * Since you merged into master and pushed the changes to a remote respository, delete the local branch (`git branch -D add-fireflies`).
 * Now it's time to delete the remote branch `add-fireflies` as it is now included in the master branch: `git push origin :add-fireflies`
 
+### Final Section
+
+Replace the question marks in `spec/spec_helper.rb`
+
 ## Extra Credit
 
 Merge `add-walrus-and-polar-bear` into master. Fix the merge conflicts and push the changes before deleting the local and remote `add-walrus-and-polar-bear` branches.
