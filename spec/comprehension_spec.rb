@@ -143,7 +143,7 @@ describe "GIT" do
   end
 
   it "20. 'git branch style-image' followed by 'git checkout style-image' 
-      is the same as 'git branch -b style-image'" do
+      is the same as 'git checkout -b style-image'" do
     # "true" or "false", in a string
     answer = "true"
 
