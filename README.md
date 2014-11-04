@@ -188,7 +188,7 @@ Since you're working on this project alone, you're going to mimic the remote cre
   * ![table flip added to readme](https://s3-us-west-2.amazonaws.com/readme-photos/git-flow-update-lauren.png)
 
 * Scroll to the bottom, add a commit message like "added table flip to readme", and click commit changes.
-  * ![commit changes](https://s3-us-west-2.amazonaws.com/readme-photos/git-flow-update-commit-<changes class="png"></changes>)
+  * ![commit changes](https://s3-us-west-2.amazonaws.com/readme-photos/git-flow-update-commit-changes.png)
 * Lauren's work here is done. You can go back to being you.
 
 #### You Time
