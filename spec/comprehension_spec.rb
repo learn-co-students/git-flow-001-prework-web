@@ -15,9 +15,9 @@ describe "GIT" do
 
   it "3. What is the syntax for staging changes in every file, tracked and untracked,
       if a previously staged and committed file has been deleted?" do
-    answer = "git add --all"
-    encoded_answer = "e3ed0db138a439522bc6f0a56c71b2c90e3443db"
-    expect(encode(answer)).to eq(encoded_answer)
+    answer = "git add --all" # or "git add -A"
+    encoded_answers = ["e3ed0db138a439522bc6f0a56c71b2c90e3443db", "d43b64f144ca0689fea30adb6e5cb2150c971a0c"]
+    expect(encode(answer)).to satisfy { |answer| encoded_answers.include?(answer) }
   end
 
   it "4. What is the syntax for committing all staged changes with the message 
