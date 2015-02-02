@@ -3,7 +3,7 @@
 # Require this file using `require "spec_helper"` to ensure that it is only
 # loaded once.
 require 'digest/sha1'
-require 'pry'
+
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
   # Run specs in random order to surface order dependencies. If you find an
