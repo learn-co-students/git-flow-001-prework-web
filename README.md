@@ -215,7 +215,7 @@ Now you need to get the changes that Lauren made.
 ```
 
 * Add and commit these changes (`git add index.html`, `git commit -m "add firefly img and caption`") before checking out to master (`git checkout master`). 
-* From master, merge `add-butterflies` (`git merge add-fireflies`). Make sure all three pictures are there (tree, turtle, fireflies) before pushing up to your remote repository (`git push origin master`).
+* From master, merge `add-fireflies` (`git merge add-fireflies`). Make sure all three pictures are there (tree, turtle, fireflies) before pushing up to your remote repository (`git push origin master`).
 * Since you merged into master and pushed the changes to a remote respository, delete the local branch (`git branch -D add-fireflies`).
 * Now it's time to delete the remote branch `add-fireflies` as it is now included in the master branch: `git push origin :add-fireflies`
 
