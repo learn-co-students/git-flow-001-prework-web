@@ -241,7 +241,7 @@ Without looking at the diagram above, try and draw your own visualization. Take 
 
 ### Quiz Time
 
-From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `ironboard`. Once every test is passing, submit a pull request using your master branch.
+From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `learn`. Once every test is passing, submit a pull request using your master branch.
 
 ## Extra Credit
 
