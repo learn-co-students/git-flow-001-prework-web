@@ -140,7 +140,6 @@ HTML for walrus
 
 * Fix the merge conflict in `index.html` so that index now has four photos: tree, turtle, walrus, and polar bear.
 * Remember, if you have multiple files with merge conflicts, you'll have to repeat this process with each file. Once you're done selecting which code to retain, `git add` and `git commit` these changes. Now when you type `git status`, your terminal should not display "You have unmerged paths."
-* Add and commit these changes.
 
 #### Pushing a Local Branch
 
