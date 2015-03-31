@@ -251,18 +251,7 @@ describe "GIT" do
     expect(encode(answer)).to eq(encoded_answer)
   end
 
-<<<<<<< HEAD
-  it "33. If index.html is being tracked and you modify, stage, and commit the change,
-      what color (or shade) will the readout be if you run 'git status'?" do 
-    answer = "white"
-    encoded_answer = "528cef87d0bfb947548ab94679d1e5765f19089a"
-    expect(encode(answer)).to eq(encoded_answer)
-  end
-
-  it "34. If you clone down a repo and make one change that you add and commit locally,
-=======
   it "33. If you clone down a repo and make one change that you add and commit locally,
->>>>>>> master
      assuming no one has pushed to your remote since you cloned it, will 'git status' say
      you're ahead or behind origin/master?" do
     # "ahead" or "behind" or "ahead and behind"
