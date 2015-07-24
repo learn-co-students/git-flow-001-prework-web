@@ -1,9 +1,3 @@
----
-languages: bash, git, ruby
-tags: git, git merge, git fetch, git commit, git push, git status
-resources: 5
----
-
 # Git Flow
 
 ## Objectives
