@@ -1,27 +1,27 @@
 describe "GIT" do
 # describe "STAGING AND COMMITTING CHANGES:" do
   it "1. What is the syntax for staging a change in index.html if it is in the root dir?" do
-    answer = "git status"
+    answer = "git add index.html"
     encoded_answer = "bf338924ddc9ff4eb0c685a794960e0c4ffade2c"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "2. What is the syntax for staging all files, including new, modified, and deleted files?" do
-    answer = "git add"
+    answer = "git add ."
     encoded_answers = ["e3ed0db138a439522bc6f0a56c71b2c90e3443db", "d43b64f144ca0689fea30adb6e5cb2150c971a0c", "1a1c76a81d0981b7fe181d7869d1ede4d1a2a24f"]
     expect(encode(answer)).to satisfy { |answer| encoded_answers.include?(answer) }
   end
 
   it "3. What is the syntax for committing all staged changes with the message 
       'update link styles'?" do
-    answer = "git commit -m"
+    answer = "git commit -m 'update link styles'"
     encoded_answer = "8d06e2760cda4755f387db0db0e6c425b2ece976"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "4. What command allows you to add all previously all tracked, modified files
       and create a message, 'add img to index' for the commit in one command?" do
-    answer = ""
+    answer = "git commit -am 'add img to index'"
     encoded_answer = "00565151beeb1fa3682d6386399eaf87b788a5bc"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -38,7 +38,7 @@ describe "GIT" do
   it "6. From the feature branch 'add-links', what is the syntax for creating a 
       remote add-links branch with all of the local branch's content? 
       (remote is still called 'origin')" do
-    answer = "?"
+    answer = "git push origin add-links"
     encoded_answer = "07476403b56e1437e855a5d7031b3abc0b97de5a"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -53,7 +53,7 @@ describe "GIT" do
   it "8. From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
-    answer = "?"
+    answer = "git push upstream add-image"
     encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -61,7 +61,7 @@ describe "GIT" do
 
 # describe "FETCHING:" do
   it "9. What command do you run to update all branches from all remotes?" do
-    answer = "?"
+    answer = "git fetch --all"
     encoded_answer = "01e5711a6878a7ed0e4c0078870b772d0a58f510"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -69,14 +69,14 @@ describe "GIT" do
   it "10. Locally you have a master branch, remotely there is a master & add-nav-bar branch.
       You run 'git fetch --all'. 
       What command would you need to run to view and change 'add-nav-bar' branch locally?" do
-    answer = "git co add-nav-bar"
+    answer = "git checkout add-nav-bar"
     encoded_answer = "a510904cdd46be19a468be297076084d2ec5a5cf"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "11. What command do you run to update the local master branch with the 
       master branch on the remote 'upstream'?" do
-    answer = "git push upstream master"
+    answer = "git fetch upstream master"
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -86,7 +86,7 @@ describe "GIT" do
 
   it "12. Is 'git pull' the same as running 'git fetch' followed by 'git merge'?" do
     # "true" or "false" in a string
-    answer = "?" 
+    answer = "true" 
     
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
@@ -94,14 +94,14 @@ describe "GIT" do
 
   it "13. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "?"
+    answer = "git pull origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "14. From the add-img branch, what command do you run to pull down all the changes 
       from the add-img branch on the remote 'upstream'?" do
-    answer = "?"
+    answer = "git pull upstream add-img"
     encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
     expect(encode(answer)).to eq(encoded_answer)
   end
