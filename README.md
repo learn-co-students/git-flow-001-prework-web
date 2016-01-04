@@ -102,7 +102,7 @@ From the walrus branch, switch to master. From master, make a new branch, `add-w
 <!-- begin polar bear picture and caption -->
 <div class="center-container">
   <div class="card">
-    <img src="public/img/polar-bear.jpg" alt="walrus swimming with bubbles">
+    <img src="public/img/polar-bear.jpg" alt="polar bear on ice">
   </div>
   <div class="card">
     <div class="caption">
