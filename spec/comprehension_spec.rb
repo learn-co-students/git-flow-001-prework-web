@@ -53,7 +53,7 @@ describe "GIT" do
   it "8. From the feature branch 'add-image', what is the syntax for creating a remote
       add-image branch with all of the local branch's content? 
       (remote is still called 'upstream')" do
-    answer = "git branch"
+    answer = "git push upstream add-image"
     encoded_answer = "b0ce3fc84df6855995340cf16bce42f90ac9f9ab"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -76,7 +76,10 @@ describe "GIT" do
 
   it "11. What command do you run to update the local master branch with the 
       master branch on the remote 'upstream'?" do
-    answer = "?"
+    answer = "git fetch upstream master"
+    #git pull upstream master:master
+    #git pull upstream master
+    #git pull
     encoded_answer = "10ce0782f27a2e126f7fe0f12dd189cc16578e26"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -94,14 +97,14 @@ describe "GIT" do
 
   it "13. From the add-img branch, what command do you run to fetch and merge all the 
       changes from the add-img branch on the remote 'origin'?" do
-    answer = "?"
+    answer = "git pull origin add-img"
     encoded_answer = "96887ba3f8740e85c07e4ee6bebba55ad8c779d0"
     expect(encode(answer)).to eq(encoded_answer)
   end
 
   it "14. From the add-img branch, what command do you run to pull down all the changes 
       from the add-img branch on the remote 'upstream'?" do
-    answer = "?"
+    answer = "git pull upstream add-img"
     encoded_answer = "6c3209e77d80f4f76e692f6b7a9fb9be17068e3e"
     expect(encode(answer)).to eq(encoded_answer)
   end
