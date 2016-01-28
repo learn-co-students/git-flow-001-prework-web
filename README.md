@@ -273,4 +273,4 @@ Now you have:
 * [Pro Git](http://git-scm.com/book/) - [3.2 Git Branching - Basic Branching and Merging](http://git-scm.com/book/en/Git-Branching-Basic-Branching-and-Merging)
 * [LearnGitBranching](http://pcottle.github.io/learnGitBranching/) - [Introduction Sequence: Branching in Git](http://pcottle.github.io/learnGitBranching/)
 
-<a href='https://learn.co/lessons/git-flow' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-flow' title='Git Flow'>Git Flow</a> on Learn.co and start learning to code for free.</p>
