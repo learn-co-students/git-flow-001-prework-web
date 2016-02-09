@@ -5,7 +5,15 @@
 * Get familiar with git syntax
 * Get comfortable creating, merging, pushing, and pulling branches
 * Resolve merge conflicts
+<<<<<<< HEAD
 #motti testing
+=======
+
+
+## Lauren Here:
+ 
+(╯°□°）╯︵ ┻━┻
+>>>>>>> add-fireflies
 ## Instructions
 
 Remember to fork and clone this lab if you haven't already.
