@@ -74,7 +74,7 @@ Now that you've added the changes you've made from add-turtle to master, and mas
 
 #### Walrus Branch
 
-From master, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures.
+From `master`, make a new branch, `add-walrus`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures.
 
 ```html
 <!-- begin walrus picture and caption -->
@@ -92,11 +92,11 @@ From master, make a new branch, `add-walrus`. On this branch, you're going to ad
 </div>
 <!-- end walrus picture and caption -->
 ```
-Remember to add and commit these changes.
+**Remember to add and commit these changes.**
 
 #### Polar Bear and Walrus Branch
 
-From the walrus branch, switch to master. From master, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures (the same location where you added the walrus photo).
+**From the `add-walrus` branch, switch to `master`.** From `master`, make a new branch, `add-walrus-and-polar-bear`. On this branch, you're going to add the below code to `index.html`, under the tree and turtle pictures (the same location where you added the walrus photo).
 
 ```html
 <!-- begin polar bear picture and caption -->
@@ -119,7 +119,7 @@ Remember to add and commit these changes as well.
 
 #### Merging with Conflicts
 
-* From the add-walrus-and-polar-bear branch, merge the add-walrus branch: `git merge add-walrus`
+* From the `add-walrus-and-polar-bear branch`, merge the `add-walrus` branch: `git merge add-walrus`
 * You'll probably see a message that looks like "Automatic merge failed; fix conflicts and then commit the result." This just means that you will have to open the files where there are merge conflicts, in this case `index.html`, and find the part that looks like:
 
 ```
