@@ -234,7 +234,7 @@ Without looking at the diagram above, try and draw your own visualization. Take 
 
 ### Quiz Time
 
-From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `learn`. Once every test is passing, submit a pull request using your master branch.
+From the master branch, replace the question marks in `spec/comprehension_spec.rb` with the answers. Every answer should be a string. To check your answers, run `learn`. (If you don't have the Learn gem installed, you'll need to do that first: `gem install learn-co`. If the `gem` command doesn't work, make sure you have a working installation of [Ruby](https://www.ruby-lang.org/en/).) Once every test is passing, submit a pull request using your master branch.
 
 ## Extra Credit
 
