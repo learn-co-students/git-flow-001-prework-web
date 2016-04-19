@@ -205,6 +205,7 @@ describe "GIT" do
 # end
 
 # describe "DELETING BRANCHES:" do
+# describe "DELETING BRANCHES:" do
   it "27. From master, what is the syntax for deleting a local branch called 
       'add-link'?" do
     answer = "git branch -d add-link"
