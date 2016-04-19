@@ -246,7 +246,7 @@ describe "GIT" do
   it "32. If you clone down a repo and make one change that you add and commit locally,
      assuming no one has pushed to your remote since you cloned it, will 'git status' say
      you're ahead or behind origin/master?" do
-    # "ahead" or "behind" or "ahead and behind"
+    # "ahead" or "behind" or "ahead and behind"comment
     answer = "ahead"
     encoded_answer = "a7481340412e5d73e6c5c8de4ef9285b85502d5a"
     expect(encode(answer)).to eq(encoded_answer)
