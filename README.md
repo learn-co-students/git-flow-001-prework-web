@@ -6,6 +6,10 @@
 * Get comfortable creating, merging, pushing, and pulling branches
 * Resolve merge conflicts
 
+* ## Lauren Here:
+ 
+(╯°□°）╯︵ ┻━┻
+
 ## Instructions
 
 Remember to fork and clone this lab if you haven't already.
@@ -40,6 +44,21 @@ Before altering your code base, open `index.html` in the browser. In the first p
   </div>
 </div>
 <!-- end turtle picture and caption -->
+
+<!-- begin fireflies picture and caption -->
+<div class="center-container">
+  <div class="card">
+    <img src="public/img/fireflies.jpg" alt="fireflies in a forest">
+  </div>
+  <div class="card">
+    <div class="caption">
+      <h4>Searching for Love</h4>
+      <p>Spencer Black</p>
+      <p>Blue ghost fireflies in Brevard, North Carolina</p>
+    </div>
+  </div>
+</div>
+<!-- end fireflies picture and caption -->
 ```
 
 * Open up your `index.html` and see how the page looks.
