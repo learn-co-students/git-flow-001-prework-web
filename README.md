@@ -6,6 +6,11 @@
 * Get comfortable creating, merging, pushing, and pulling branches
 * Resolve merge conflicts
 
+## Lauren Here:
+ 
+(╯°□°）╯︵ ┻━┻
+
+
 ## Instructions
 
 Remember to fork and clone this lab if you haven't already.
@@ -274,3 +279,4 @@ Now you have:
 * [LearnGitBranching](http://pcottle.github.io/learnGitBranching/) - [Introduction Sequence: Branching in Git](http://pcottle.github.io/learnGitBranching/)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/git-flow' title='Git Flow'>Git Flow</a> on Learn.co and start learning to code for free.</p>
+
